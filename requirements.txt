@@ -1,0 +1,23 @@
+# Core — required, 100% free, no account/signup/API key needed for any of these.
+Django>=5.0,<6.0
+djangorestframework>=3.15
+python-docx>=1.1
+PyMuPDF>=1.24
+pdfplumber>=0.11
+python-dotenv>=1.0
+django-environ>=0.11
+
+# Everything above is all this project needs to run completely free, with
+# zero paid services: SQLite database, rule-based resume parsing, rule-based
+# question generation/answer scoring, and browser-based voice (Feature 9).
+
+# --- Optional extras (NOT required) ---------------------------------------
+# Uncomment ONLY if you specifically want PostgreSQL instead of the default
+# SQLite (set USE_SQLITE=False in .env to use it):
+# psycopg2-binary>=2.9
+
+# Uncomment ONLY if you want to plug in a paid LLM (OpenAI) for smarter
+# question generation/scoring/resume parsing and server-side Whisper voice
+# transcription. Leave OPENAI_API_KEY empty in .env (the default) and the
+# app runs great without this — see README "AI generation strategy".
+# openai>=1.30
